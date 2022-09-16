@@ -1,0 +1,2 @@
+# QALearning
+Learning QA automation
