@@ -13,9 +13,9 @@ public class PageObjectManager {
 		this.driver = driver;
 	}
 
-	public  WebDriver returnDriver() {
-		return driver;
-	}
+//	public  WebDriver returnDriver() {
+//		return driver;
+//	}
 
 	// instanciate homepage
 	public HomePage getHomePage() {

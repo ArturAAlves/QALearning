@@ -12,8 +12,8 @@ public class Hooks {
 		this.testContext = context;
 	}
 
-//	@After
-//	public void AfterScenario() throws IOException {
-//		testContext.testBase.WebDriverManager().close();
-//	}
+	@After
+	public void AfterScenario() throws IOException {
+		testContext.testBase.WebDriverManager().close();
+	}
 }

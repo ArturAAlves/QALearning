@@ -1,11 +1,9 @@
 package stepDefinitions;
 
-import java.util.ArrayList;
-import java.util.Set;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import cucumber.TestContext;
 import io.cucumber.java.en.Then;
@@ -13,31 +11,34 @@ import io.cucumber.java.en.Then;
 public class CartPageStep {
 
 	TestContext testContext;
-	WebDriver driver;
+	String cartUrl;
+	String selectCountryUrl;
 
-	public CartPageStep(TestContext context) {
+	public CartPageStep(TestContext context) throws InterruptedException {
 		testContext = context;
-		driver = testContext.pageObjectManager.driver;
+		testContext.pageObjectManager.cartPage();
+		cartUrl = testContext.testBase.cartPageUrl;
+		selectCountryUrl = testContext.testBase.selectCountryPageUrl;
+		Thread.sleep(1000);
 	}
 
-	@Then("user should be in the cart page, and should have a set of {int} {string}")
-	public void user_should_be_in_the_cart_page_and_should_have_a_set_of(Integer int1, String string)
-			throws InterruptedException {
-		Thread.sleep(500);
-		WebElement applyButton = driver.findElement(By.xpath("(//button[normalize-space()='Apply'])[1]"));
-		applyButton.click();
+	@Then("user should be in the cart page, and should have a set of {string} {string}")
+	public void user_should_be_in_the_cart_page_and_should_have_a_set_of(String numberOfProducts, String product) throws InterruptedException {
+		Assert.assertEquals(cartUrl, testContext.pageObjectManager.cartPage.getCurrentUrl());
+		Assert.assertEquals(numberOfProducts, testContext.pageObjectManager.cartPage.productQuantity().getText());
+
 	}
 
 	@Then("should see Apply button and Place Order button displaying")
 	public void should_see_apply_button_and_place_order_button_displaying() {
-		// Write code here that turns the phrase above into concrete actions
-
+		Assert.assertNotNull(testContext.pageObjectManager.cartPage.applyButton());
+		Assert.assertNotNull(testContext.pageObjectManager.cartPage.placeOrderButton());
 	}
 
 	@Then("user will click Place Order button and move to choose country page")
-	public void user_will_click_place_order_button_and_move_to_choose_country_page() {
-		// Write code here that turns the phrase above into concrete actions
-
+	public void user_will_click_place_order_button_and_move_to_choose_country_page() throws InterruptedException {
+		testContext.pageObjectManager.cartPage.placeOrderButton().click();
+		Assert.assertEquals(selectCountryUrl, testContext.pageObjectManager.cartPage.getCurrentUrl());
 	}
 
 }
