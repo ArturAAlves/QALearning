@@ -1,10 +1,6 @@
 package stepDefinitions;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-
 import cucumber.TestContext;
 import io.cucumber.java.en.Then;
 
@@ -23,7 +19,8 @@ public class CartPageStep {
 	}
 
 	@Then("user should be in the cart page, and should have a set of {string} {string}")
-	public void user_should_be_in_the_cart_page_and_should_have_a_set_of(String numberOfProducts, String product) throws InterruptedException {
+	public void user_should_be_in_the_cart_page_and_should_have_a_set_of(String numberOfProducts, String product)
+			throws InterruptedException {
 		Assert.assertEquals(cartUrl, testContext.pageObjectManager.cartPage.getCurrentUrl());
 		Assert.assertEquals(numberOfProducts, testContext.pageObjectManager.cartPage.productQuantity().getText());
 
@@ -33,6 +30,7 @@ public class CartPageStep {
 	public void should_see_apply_button_and_place_order_button_displaying() {
 		Assert.assertNotNull(testContext.pageObjectManager.cartPage.applyButton());
 		Assert.assertNotNull(testContext.pageObjectManager.cartPage.placeOrderButton());
+
 	}
 
 	@Then("user will click Place Order button and move to choose country page")

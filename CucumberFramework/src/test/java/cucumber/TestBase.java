@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
-	private WebDriver driver;
+	public WebDriver driver;
 	public String homePageUrl;
 	public String cartPageUrl;
 	public String selectCountryPageUrl;
@@ -24,7 +24,9 @@ public class TestBase {
 		homePageUrl = prop.getProperty("homePageUrl");
 		cartPageUrl = prop.getProperty("cartPageUrl");
 		selectCountryPageUrl = prop.getProperty("selectCountryPageUrl");
-		String browser = prop.getProperty("browser");
+		String browser_properties = prop.getProperty("browser");
+		String browser_maven = System.getProperty("browser");
+		String browser = browser_maven != null ? browser_maven : browser_properties;
 
 		if (driver == null) {
 			if (browser.equals("chrome")) {
@@ -34,16 +36,10 @@ public class TestBase {
 				driver = new ChromeDriver(options);
 				driver.get(homePageUrl);
 			} else {
-				System.out.println("other browser");
+				System.out.println("Running teast with other browser");
 			}
-
 		}
-
 		return driver;
 	}
 
-	private boolean typeof(String browser) {
-		// TODO Auto-generated method stub
-		return false;
-	}
 }

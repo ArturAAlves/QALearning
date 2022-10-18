@@ -16,7 +16,7 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-@tag
+
 Feature: Buy items
 
   Scenario: Add 3 items to cart , and click place order button in cart page sucessfully
