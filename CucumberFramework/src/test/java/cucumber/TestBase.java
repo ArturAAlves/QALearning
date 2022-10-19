@@ -17,6 +17,7 @@ public class TestBase {
 	public String selectCountryPageUrl;
 
 	public WebDriver WebDriverManager() throws IOException {
+
 		FileInputStream fis = new FileInputStream(
 				System.getProperty("user.dir") + "/src/test/resources/global.properties");
 		Properties prop = new Properties();

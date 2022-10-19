@@ -1,0 +1,5 @@
+import "./device.cy"
+import "./fixture.cy"
+import "./keyboard.cy"
+import "./login.cy"
+import "./simple.cy"
