@@ -1,5 +1,6 @@
+/// <reference types="cypress" />
 // ***********************************************
-// This example commands.js shows you how to
+// This example commands.ts shows you how to
 // create various custom commands and overwrite
 // existing commands.
 //
@@ -23,28 +24,14 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-
-/* Cypress.Commands.add("login", (username, password) => {
-	cy.clearCookies()
-	cy.clearLocalStorage()
-	cy.get("#user_login").type(username)
-	cy.get("#user_password").type(password)
-    cy.get("#user_remember_me").click()
-    cy.contains("Sign in").click()
-}) */
-
-Cypress.Commands.add("goTo", (website, incluededText) => {
-	cy.visit(website)
-	if (!incluededText) {
-		cy.url().should("include", website)
-	} else {
-		cy.url().should("include", incluededText)
-	}
-})
-
-Cypress.Commands.add("login", (username, password) => {
-	cy.fixture("user").then(user => {
-		cy.login(user.id, user.password)
-	})
-	cy.contains("Sign in").click()
-})
+//
+// declare global {
+//   namespace Cypress {
+//     interface Chainable {
+//       login(email: string, password: string): Chainable<void>
+//       drag(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
+//       dismiss(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
+//       visit(originalFn: CommandOriginalFn, url: string, options: Partial<VisitOptions>): Chainable<Element>
+//     }
+//   }
+// }

@@ -1,0 +1,20 @@
+{
+	"name": "cypress-actions",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"cypress:run": "cypress run && npx mochawesome-merge ./cypress/results/*.json -o ./cypress/results/output.json && npx marge ./cypress/results/output.json"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"cypress": "^10.10.0",
+		"prettier": "^2.7.1",
+		"typescript": "^4.8.4"
+	},
+	"devDependencies": {
+		"cypress-mochawesome-reporter": "^3.2.3"
+	}
+}
