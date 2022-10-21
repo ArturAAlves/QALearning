@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "cypress": "^10.10.0",
+    "cypress-image-snapshot": "^4.0.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
+  },
+  "name": "cypress-framework",
+  "version": "1.0.0",
+  "description": "Automation Framework using Cypress",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:firefox": "cypress run --browser firefox",
+    "cy:run:edge": "cypress run --browser edge",
+    "cy:run:electron": "cypress run --browser electron",
+    "cy:update-snapshots": "cypress run --env updateSnapshots=true",
+    "cy:dashboard": "npx cypress run --record --key d452b54d-edcc-46c1-9617-f77aea54d666"
+  },
+  "keywords": [
+    "Automation",
+    "framework",
+    "typescript",
+    "testing"
+  ],
+  "author": "",
+  "license": "ISC"
+}
