@@ -24,16 +24,13 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-/* Cypress.Commands.add("login", (username, password) => {
-	cy.clearCookies()
-	cy.clearLocalStorage()
-	cy.get("#user_login").type(username)
-	cy.get("#user_password").type(password)
-    cy.get("#user_remember_me").click()
-    cy.contains("Sign in").click()
-}) */
+/* failureTreshold: 0.0,
+	failureTresholdType: "percent",
+	customDiffConfig: { treshold: 0.0 },
+	capture: "viewport", */
 
-Cypress.Commands.add("goTo", (website, incluededText) => {
+
+/* Cypress.Commands.add("goTo", (website, incluededText) => {
 	cy.visit(website)
 	if (!incluededText) {
 		cy.url().should("include", website)
@@ -41,10 +38,4 @@ Cypress.Commands.add("goTo", (website, incluededText) => {
 		cy.url().should("include", incluededText)
 	}
 })
-
-Cypress.Commands.add("login", (username, password) => {
-	cy.fixture("user").then(user => {
-		cy.login(user.id, user.password)
-	})
-	cy.contains("Sign in").click()
-})
+ */
