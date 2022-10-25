@@ -17,7 +17,8 @@
     "cy:run:edge": "cypress run --browser edge",
     "cy:run:electron": "cypress run --browser electron",
     "cy:update-snapshots": "cypress run --env updateSnapshots=true",
-    "cy:dashboard": "npx cypress run --record --key d452b54d-edcc-46c1-9617-f77aea54d666"
+    "cy:dashboard": "npx cypress run --record --key d452b54d-edcc-46c1-9617-f77aea54d666",
+    "jenkins": "java -jar jenkins.war  --enable-future-java --httpPort=8080"
   },
   "keywords": [
     "Automation",

@@ -4,6 +4,3 @@ npm-debug.log
 .nyc
 .env
 .DS_Store
-# Package Files #
-*.jar
-*.war

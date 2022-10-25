@@ -1,0 +1,16 @@
+{
+	"name": "cypress-api-testing",
+	"version": "1.0.0",
+	"description": "Cypress , API , REST , TESTING , AUTOMATION",
+	"main": "index.js",
+	"scripts": {
+		"cy:run": "npx cypress run",
+    "cy:open": "npx cypress open"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"cypress": "^10.10.0",
+		"prettier": "^2.7.1"
+	}
+}
