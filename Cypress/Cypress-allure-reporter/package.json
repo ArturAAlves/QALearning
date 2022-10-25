@@ -1,0 +1,19 @@
+{
+	"name": "cypress-allure-reporter",
+	"version": "1.0.0",
+	"description": "Cypress using Allure ",
+	"main": "index.js",
+	"scripts": {
+		"cy:run": "cypress run",
+		"cy:open": "cypress open"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"cypress": "^10.10.0",
+		"prettier": "^2.7.1"
+	},
+	"devDependencies": {
+		"@shelex/cypress-allure-plugin": "^2.33.1"
+	}
+}
