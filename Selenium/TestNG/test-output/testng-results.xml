@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="10" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-06T14:42:34 WEST" name="Suite" finished-at="2022-09-06T14:42:34 WEST" duration-ms="152">
+    <groups>
+    </groups>
+    <test started-at="2022-09-06T14:42:34 WEST" name="Test" finished-at="2022-09-06T14:42:34 WEST" duration-ms="65">
+      <class name="test.Day1">
+        <test-method signature="demo(java.lang.String)[pri:0, instance:test.Day1@6a6afff2]" started-at="2022-09-06T14:42:34 WEST" name="demo" finished-at="2022-09-06T14:42:34 WEST" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[www.sapo.pt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo -->
+        <test-method signature="demo2()[pri:0, instance:test.Day1@6a6afff2]" started-at="2022-09-06T14:42:34 WEST" name="demo2" finished-at="2022-09-06T14:42:34 WEST" duration-ms="7" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertFalse(Assert.java:67)
+at org.testng.Assert.assertFalse(Assert.java:77)
+at test.Day1.demo2(Day1.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo2 -->
+      </class> <!-- test.Day1 -->
+      <class name="test.Day2">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:test.Day2@a2431d0]" started-at="2022-09-06T14:42:34 WEST" name="beforeTest" finished-at="2022-09-06T14:42:34 WEST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="loginAfiliates()[pri:0, instance:test.Day2@a2431d0]" started-at="2022-09-06T14:42:34 WEST" name="loginAfiliates" finished-at="2022-09-06T14:42:34 WEST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAfiliates -->
+        <test-method signature="loginClients()[pri:0, instance:test.Day2@a2431d0]" started-at="2022-09-06T14:42:34 WEST" name="loginClients" finished-at="2022-09-06T14:42:34 WEST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginClients -->
+        <test-method signature="loginWorkers()[pri:0, instance:test.Day2@a2431d0]" started-at="2022-09-06T14:42:34 WEST" name="loginWorkers" finished-at="2022-09-06T14:42:34 WEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWorkers -->
+      </class> <!-- test.Day2 -->
+    </test> <!-- Test -->
+    <test started-at="2022-09-06T14:42:34 WEST" name="login" finished-at="2022-09-06T14:42:34 WEST" duration-ms="9">
+      <class name="test.Day3">
+        <test-method is-config="true" signature="RunBefore()[pri:0, instance:test.Day3@47faa49c]" started-at="2022-09-06T14:42:34 WEST" name="RunBefore" finished-at="2022-09-06T14:42:34 WEST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RunBefore -->
+        <test-method signature="DataClients(java.lang.String)[pri:0, instance:test.Day3@47faa49c]" started-at="2022-09-06T14:42:34 WEST" name="DataClients" finished-at="2022-09-06T14:42:34 WEST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[www.notsapo.pt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DataClients -->
+      </class> <!-- test.Day3 -->
+    </test> <!-- login -->
+  </suite> <!-- Suite -->
+</testng-results>

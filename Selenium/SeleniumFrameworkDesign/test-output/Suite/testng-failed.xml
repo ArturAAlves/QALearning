@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Full Test (failed)">
+    <classes>
+      <class name="AA.SeleniumFrameworkDesign.tests.StandAloneTest">
+        <methods>
+          <include name="submitOrder"/>
+        </methods>
+      </class> <!-- AA.SeleniumFrameworkDesign.tests.StandAloneTest -->
+    </classes>
+  </test> <!-- Full Test (failed) -->
+</suite> <!-- Failed suite [Suite] -->

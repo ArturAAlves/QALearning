@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="1" ignored="0" total="3" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-09-16T10:36:34 WEST" name="Suite" finished-at="2022-09-16T10:36:47 WEST" duration-ms="12609">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidation.LoginValidationIsTrue()[pri:0, instance:AA.SeleniumFrameworkDesign.tests.ErrorValidation@6c284af]" name="LoginValidationIsTrue" class="AA.SeleniumFrameworkDesign.tests.ErrorValidation"/>
+        <method signature="ErrorValidation.LoginValidationIsWrong()[pri:0, instance:AA.SeleniumFrameworkDesign.tests.ErrorValidation@6c284af]" name="LoginValidationIsWrong" class="AA.SeleniumFrameworkDesign.tests.ErrorValidation"/>
+      </group> <!-- ErrorHandling -->
+    </groups>
+    <test started-at="2022-09-16T10:36:34 WEST" name="Login Validation" finished-at="2022-09-16T10:36:47 WEST" duration-ms="12609">
+      <class name="AA.SeleniumFrameworkDesign.tests.ErrorValidation">
+        <test-method signature="LoginValidationIsTrue()[pri:0, instance:AA.SeleniumFrameworkDesign.tests.ErrorValidation@6c284af]" started-at="2022-09-16T10:36:34 WEST" name="LoginValidationIsTrue" finished-at="2022-09-16T10:36:39 WEST" duration-ms="4614" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginValidationIsTrue -->
+        <test-method retried="true" signature="LoginValidationIsWrong()[pri:0, instance:AA.SeleniumFrameworkDesign.tests.ErrorValidation@6c284af]" started-at="2022-09-16T10:36:39 WEST" name="LoginValidationIsWrong" finished-at="2022-09-16T10:36:43 WEST" duration-ms="4044" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[did not expect [Incorrect email or password.] but found [Incorrect email or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: did not expect [Incorrect email or password.] but found [Incorrect email or password.]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1417)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2033)
+at org.testng.Assert.assertNotEquals(Assert.java:2055)
+at AA.SeleniumFrameworkDesign.tests.ErrorValidation.LoginValidationIsWrong(ErrorValidation.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginValidationIsWrong -->
+        <test-method signature="LoginValidationIsWrong()[pri:0, instance:AA.SeleniumFrameworkDesign.tests.ErrorValidation@6c284af]" started-at="2022-09-16T10:36:43 WEST" name="LoginValidationIsWrong" finished-at="2022-09-16T10:36:46 WEST" duration-ms="3536" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[did not expect [Incorrect email or password.] but found [Incorrect email or password.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: did not expect [Incorrect email or password.] but found [Incorrect email or password.]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failEquals(Assert.java:1417)
+at org.testng.Assert.assertNotEqualsImpl(Assert.java:156)
+at org.testng.Assert.assertNotEquals(Assert.java:2033)
+at org.testng.Assert.assertNotEquals(Assert.java:2055)
+at AA.SeleniumFrameworkDesign.tests.ErrorValidation.LoginValidationIsWrong(ErrorValidation.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:806)
+at org.testng.TestRunner.run(TestRunner.java:601)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:471)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginValidationIsWrong -->
+      </class> <!-- AA.SeleniumFrameworkDesign.tests.ErrorValidation -->
+    </test> <!-- Login Validation -->
+  </suite> <!-- Suite -->
+</testng-results>
