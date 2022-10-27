@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Oct 27 14:56:10 WEST 2022","Thu Oct 27 14:56:11 WEST 2022","1128","","Login page","","","","Blocked Login",""
+"passed","Thu Oct 27 14:56:17 WEST 2022","Thu Oct 27 14:56:18 WEST 2022","900","","Login page with Tags","","","","Blocked Login",""
+"passed","Thu Oct 27 14:56:12 WEST 2022","Thu Oct 27 14:56:13 WEST 2022","989","","Login page","","","","Incorrect Password Login",""
+"passed","Thu Oct 27 14:56:16 WEST 2022","Thu Oct 27 14:56:17 WEST 2022","972","","Login page with Tags","","","","Success Login",""
+"passed","Thu Oct 27 14:56:11 WEST 2022","Thu Oct 27 14:56:12 WEST 2022","979","","Login page","","","","Incorrect Username Login",""
+"passed","Thu Oct 27 14:56:09 WEST 2022","Thu Oct 27 14:56:10 WEST 2022","1156","","Login page","","","","Success Login",""

@@ -4,7 +4,7 @@
         "source.fixAll.eslint": true
     },
     "editor.formatOnSave": true,
-    "cucumberautocomplete.steps": ["cypress/e2e/cucumber/**/*.js"],
+
     "cucumberautocomplete.syncfeatures": true,
     "cucumberautocomplete.strictGherkinCompletion": false,
     "cucumberautocomplete.onTypeFormat": true,
@@ -15,8 +15,5 @@
         "enable": true,
         "allurePlugin": true,
         "tags": ["focus", "myTag", "someOtherTag"]
-    },
-    "[feature]": {
-        "editor.defaultFormatter": "alexkrechik.cucumberautocomplete"
     }
 }
