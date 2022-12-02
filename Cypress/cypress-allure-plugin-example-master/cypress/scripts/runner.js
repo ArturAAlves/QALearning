@@ -1,4 +1,4 @@
-const cypress = require('cypress');
+/* const cypress = require('cypress');
 
 const cypressConfig = {
     video: true,
@@ -28,3 +28,4 @@ const cypressCucumberConfig = {
     await cypress.run(cypressConfig);
     await cypress.run(cypressCucumberConfig);
 })();
+ */

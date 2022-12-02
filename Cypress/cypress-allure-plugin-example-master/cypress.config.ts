@@ -6,11 +6,8 @@ const {
 } = require('@badeball/cypress-cucumber-preprocessor');
 
 module.exports = defineConfig({
-    env: {
-        issuePrefix: 'https://your.domain.atlassian.net/browse/',
-        tmsPrefix: 'https://some.testrail.instance/path/suite/caseID-'
-    },
     e2e: {
+        specPattern: 'cypress/e2e/**/*.feature',
         setupNodeEvents: async function (on, config) {
             await addCucumberPreprocessorPlugin(on, config);
             on(

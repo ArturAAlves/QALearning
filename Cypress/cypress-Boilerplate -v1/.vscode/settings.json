@@ -8,12 +8,5 @@
     "cucumberautocomplete.syncfeatures": true,
     "cucumberautocomplete.strictGherkinCompletion": false,
     "cucumberautocomplete.onTypeFormat": true,
-    "eslint.lintTask.enable": true,
-    "cypressHelper.commandForOpen": "npm run cy:cucumber:open",
-    "cypressHelper.customCommandsFolder": "cypress/support",
-    "cypressHelper.cucumberTagsAutocomplete": {
-        "enable": true,
-        "allurePlugin": true,
-        "tags": ["focus", "myTag", "someOtherTag"]
-    }
+    "eslint.lintTask.enable": true
 }
